@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx supabase *)",
+      "Bash(supabase --version)",
+      "Bash(supabase status *)",
+      "Read(//c/Users/HP/.supabase/**)",
+      "Read(//c/Users/HP/.supabase//**)",
+      "Bash(supabase db *)",
+      "Bash(supabase migration *)",
+      "Bash(node scripts/e2e-test.js)",
+      "Bash(netstat -ano)",
+      "Bash(node -e ' *)"
+    ]
+  }
+}

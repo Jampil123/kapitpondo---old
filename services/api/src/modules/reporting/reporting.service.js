@@ -38,7 +38,7 @@ async function groupLedger({ groupId, membershipId, entryType, limit = 100 }) {
 async function memberBalances(groupId) {
   const { data, error } = await supabase
     .from('memberships')
-    .select('id, heads, role, status, members(full_name)')
+    .select('id, heads, role, status, members!member_id(full_name)')
     .eq('group_id', groupId)
     .eq('status', 'active');
   if (error) throw error;

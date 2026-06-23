@@ -7,14 +7,13 @@ const membershipsRoutes = require('./modules/membership/memberships.routes');
 const cyclesRoutes = require('./modules/cycles/cycles.routes');
 const contributionsRoutes = require('./modules/contributions/contributions.routes');
 const lendingRoutes = require('./modules/lending/lending.routes');
-const errorHandler = require('./middleware/errorHandler');
 const identityRoutes = require('./modules/identity/identity.routes');
 const expensesRoutes = require('./modules/expenses/expenses.routes');
 const distributionsRoutes = require('./modules/distribution/distributions.routes');
 const monitoringRoutes = require('./modules/monitoring/monitoring.routes');
 const reportsRoutes = require('./modules/reporting/reporting.routes');
 const ledgerRoutes = require('./modules/ledger/ledger.routes');
-
+const errorHandler = require('./middleware/errorHandler');
 const app = express();
 
 app.use(cors());

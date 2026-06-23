@@ -37,7 +37,7 @@ async function getDistribution(id) {
 async function getAllocations(distributionId) {
   const { data, error } = await supabase
     .from('distribution_allocations')
-    .select('*, memberships(member_id, heads, members(full_name))')
+    .select('*, memberships!membership_id(member_id, heads, members!member_id(full_name))')
     .eq('distribution_id', distributionId)
     .order('created_at', { ascending: true });
   if (error) throw error;
