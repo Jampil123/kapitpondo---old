@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "private": true,
-  "workspaces": ["apps/*", "services/*", "packages/*"],
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "expo-dev-client": "~56.0.20"
+  }
 }
