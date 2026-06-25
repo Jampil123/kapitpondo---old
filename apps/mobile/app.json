@@ -1,11 +1,11 @@
 {
   "expo": {
     "name": "KapitPondo",
-    "slug": "mobile",
+    "slug": "kapitpondo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "mobile",
+    "scheme": "kapitpondo",
     "userInterfaceStyle": "light",
     "ios": {
       "icon": "./assets/expo.icon"
@@ -17,7 +17,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.johnp15.kapitpondo"
     },
     "web": {
       "output": "single",
@@ -39,6 +40,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "019f2a45-ce9f-4787-b72c-7cd6620fc158"
+      }
     }
   }
 }
